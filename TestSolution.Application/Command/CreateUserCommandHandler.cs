@@ -18,7 +18,7 @@ namespace TestSolution.Application.Commend
         public async Task<Guid?> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
             var user = new User(request.UserName,request.Address,request.Age);
-            var reult = _userService.GenerateString();
+            //var reult = _userService.GenerateString();
             await _context.AddAsync(user,cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
             
