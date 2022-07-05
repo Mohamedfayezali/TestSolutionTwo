@@ -25,4 +25,13 @@
     <ProjectReference Include="..\TestSolution.Api\TestSolution.Api.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TestRegister\" />
+    <Folder Include="TestLogin\" />
+    <Folder Include="TestQueries\" />
+    <Folder Include="TestServices\UserSevice\" />
+    <Folder Include="TestServices\TestUserRoleServices\TestQueries\" />
+    <Folder Include="TestServices\TestUserRoleServices\TestCommands\" />
+  </ItemGroup>
+
 </Project>

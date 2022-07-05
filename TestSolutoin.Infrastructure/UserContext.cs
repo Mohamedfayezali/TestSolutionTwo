@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TestSolutoin.Infrastructure
 {
-    public class UserContext : IdentityDbContext<IdentityUser> 
+    public class UserContext : IdentityDbContext<IdentityUser>
     {
-        public UserContext(DbContextOptions<UserContext> option):base(option)
+        public UserContext(DbContextOptions<UserContext> option) : base(option)
         {
 
         }
