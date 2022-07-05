@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TestSolutoin.Infrastructure\TestSolutoin.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

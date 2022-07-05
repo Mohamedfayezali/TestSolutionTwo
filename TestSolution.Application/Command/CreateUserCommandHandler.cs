@@ -8,17 +8,17 @@ namespace TestSolution.Application.Commend
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid?>
     {
         private readonly UserContext _context;
-        private readonly IUserService _userService;
+        //private readonly IUserService _userService;
 
-        public CreateUserCommandHandler(UserContext context,IUserService service)
+        public CreateUserCommandHandler(UserContext context)
         {
             _context = context;
-            _userService = service;
+           // _userService = service;
         }
         public async Task<Guid?> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
             var user = new User(request.UserName,request.Address,request.Age);
-            var reult = _userService.GenerateString();
+ //           var reult = _userService.GenerateString();
             await _context.AddAsync(user,cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
             
